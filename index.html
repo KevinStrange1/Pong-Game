@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="pong" width="800" height="500"></canvas>
+
+    <div class="controls">
+        <button onclick="startGame()">Start</button>
+        <button onclick="pauseGame()">Pause</button>
+        <button onclick="restartGame()">Restart</button>
+        <select onchange="setDifficulty(this.value)">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <button onclick="setTheme('classic')">Classic</button>
+        <button onclick="setTheme('neon')">Neon</button>
+        <button onclick="setTheme('retro')">Retro</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
